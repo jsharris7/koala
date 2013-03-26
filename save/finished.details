@@ -1,0 +1,1346 @@
+
+Job <168620>, Job Name <520fEOS>, User <cniu>, Project <default>, Status <DONE>
+                     , Queue <irving>, Command <#!/bin/csh; #BSUB -o output;#BS
+                     UB -e error;#BSUB -n 8;#BSUB -J 520fEOS;#BSUB -q irving;#B
+                     SUB -W 96:00;#BSUB -R "span[ptile=8] same[chassis]"; sourc
+                     e /home/cniu/Apps/VASP/Ver02/vasp.csh; mkdir 1.collinear;c
+                     p INCAR-COLL 1.collinear/INCAR;cp POTCAR KPOINTS POSCAR 1.
+                     collinear;cd 1.collinear;mpiexec_hydra /home/cniu/Apps/VAS
+                     P/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinear/CONTCAR POSCAR
+                     ;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCAR;mpiexec_hydra 
+                     /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/vasp.5.2/vasp>, Sh
+                     are group charged </P71413>
+Thu Mar 21 13:58:38: Submitted from host <login05>, CWD <$HOME/cniu/SQS/5.20.fc
+                     c.1.eos/0.97>, Output File <output>, Error File <error>, 8
+                      Processors Requested, Requested Resources <span[ptile=8] 
+                     same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n2e6-13
+Thu Mar 21 13:58:44: Started on 8 Hosts/Processors <8*n2e6-13>, Execution Home 
+                     </home/cniu>, Execution CWD </home/cniu/cniu/SQS/5.20.fcc.
+                     1.eos/0.97>;
+Fri Mar 22 14:45:02: Done successfully. The CPU time used is 712924.1 seconds.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+
+
+Job <168623>, Job Name <520fEOS>, User <cniu>, Project <default>, Status <DONE>
+                     , Queue <irving>, Command <#!/bin/csh; #BSUB -o output;#BS
+                     UB -e error;#BSUB -n 8;#BSUB -J 520fEOS;#BSUB -q irving;#B
+                     SUB -W 96:00;#BSUB -R "span[ptile=8] same[chassis]"; sourc
+                     e /home/cniu/Apps/VASP/Ver02/vasp.csh; mkdir 1.collinear;c
+                     p INCAR-COLL 1.collinear/INCAR;cp POTCAR KPOINTS POSCAR 1.
+                     collinear;cd 1.collinear;mpiexec_hydra /home/cniu/Apps/VAS
+                     P/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinear/CONTCAR POSCAR
+                     ;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCAR;mpiexec_hydra 
+                     /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/vasp.5.2/vasp>, Sh
+                     are group charged </P71413>
+Thu Mar 21 13:58:38: Submitted from host <login05>, CWD <$HOME/cniu/SQS/5.20.fc
+                     c.1.eos/1.03>, Output File <output>, Error File <error>, 8
+                      Processors Requested, Requested Resources <span[ptile=8] 
+                     same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n2j6-3
+Fri Mar 22 06:12:50: Started on 8 Hosts/Processors <8*n2j6-3>, Execution Home <
+                     /home/cniu>, Execution CWD </home/cniu/cniu/SQS/5.20.fcc.1
+                     .eos/1.03>;
+Sat Mar 23 01:06:04: Done successfully. The CPU time used is 543771.9 seconds.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+------------------------------------------------------------------------------
+
+Job <168621>, Job Name <520fEOS>, User <cniu>, Project <default>, Status <DONE>
+                     , Queue <irving>, Command <#!/bin/csh; #BSUB -o output;#BS
+                     UB -e error;#BSUB -n 8;#BSUB -J 520fEOS;#BSUB -q irving;#B
+                     SUB -W 96:00;#BSUB -R "span[ptile=8] same[chassis]"; sourc
+                     e /home/cniu/Apps/VASP/Ver02/vasp.csh; mkdir 1.collinear;c
+                     p INCAR-COLL 1.collinear/INCAR;cp POTCAR KPOINTS POSCAR 1.
+                     collinear;cd 1.collinear;mpiexec_hydra /home/cniu/Apps/VAS
+                     P/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinear/CONTCAR POSCAR
+                     ;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCAR;mpiexec_hydra 
+                     /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/vasp.5.2/vasp>, Sh
+                     are group charged </P71413>
+Thu Mar 21 13:58:38: Submitted from host <login05>, CWD <$HOME/cniu/SQS/5.20.fc
+                     c.1.eos/0.99>, Output File <output>, Error File <error>, 8
+                      Processors Requested, Requested Resources <span[ptile=8] 
+                     same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n2j6-9
+Thu Mar 21 13:58:44: Started on 8 Hosts/Processors <8*n2j6-9>, Execution Home <
+                     /home/cniu>, Execution CWD </home/cniu/cniu/SQS/5.20.fcc.1
+                     .eos/0.99>;
+Sat Mar 23 01:23:26: Done successfully. The CPU time used is 1019648.7 seconds.
+                     
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+
+
+Job <168746>, Job Name <416fVIB>, User <cniu>, Project <default>, Status <DONE>
+                     , Queue <irving>, Command <#!/bin/csh; #BSUB -o output;#BS
+                     UB -e error;#BSUB -n 8;#BSUB -J 416fVIB;#BSUB -q irving;#B
+                     SUB -W 996:00;#BSUB -R "span[ptile=8] same[chassis]"; sour
+                     ce /home/cniu/Apps/VASP/Ver02/vasp.csh; mpiexec_hydra /hom
+                     e/cniu/Apps/VASP/Ver02/vasp.5.2/vasp>, Share group charged
+                      </P71413>
+Thu Mar 21 15:21:39: Submitted from host <login05>, CWD <$HOME/cniu/SQS/4.16.fc
+                     c.5.vib/1.relax>, Output File <output>, Error File <error>
+                     , 8 Processors Requested, Requested Resources <span[ptile=
+                     8] same[chassis]>;
+
+ RUNLIMIT                
+ 59760.0 min of n3o2-9
+Fri Mar 22 07:17:36: Started on 8 Hosts/Processors <8*n3o2-9>, Execution Home <
+                     /home/cniu>, Execution CWD </home/cniu/cniu/SQS/4.16.fcc.5
+                     .vib/1.relax>;
+Sat Mar 23 03:36:35: Done successfully. The CPU time used is 584763.1 seconds.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+------------------------------------------------------------------------------
+
+Job <167958>, Job Name <424fEOS>, User <cniu>, Project <default>, Status <DONE>
+                     , Queue <irving>, Command <#!/bin/csh; #BSUB -o output;#BS
+                     UB -e error;#BSUB -n 8;#BSUB -J 424fEOS;#BSUB -q irving;#B
+                     SUB -W 96:00;#BSUB -R "span[ptile=8] same[chassis]"; sourc
+                     e /home/cniu/Apps/VASP/Ver02/vasp.csh; mkdir 1.collinear;c
+                     p INCAR-COLL 1.collinear/INCAR;cp POTCAR KPOINTS POSCAR 1.
+                     collinear;cd 1.collinear;mpiexec_hydra /home/cniu/Apps/VAS
+                     P/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinear/CONTCAR POSCAR
+                     ;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCAR;mpiexec_hydra 
+                     /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/vasp.5.2/vasp>, Sh
+                     are group charged </P71413>
+Thu Mar 21 11:26:03: Submitted from host <login03>, CWD <$HOME/cniu/SQS/4.24.fc
+                     c.1.eos/0.97>, Output File <output>, Error File <error>, 8
+                      Processors Requested, Requested Resources <span[ptile=8] 
+                     same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n3n5-4
+Thu Mar 21 11:26:07: Started on 8 Hosts/Processors <8*n3n5-4>, Execution Home <
+                     /home/cniu>, Execution CWD </home/cniu/cniu/SQS/4.24.fcc.1
+                     .eos/0.97>;
+Sat Mar 23 03:56:14: Done successfully. The CPU time used is 843302.6 seconds.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+
+
+Job <168624>, Job Name <520fEOS>, User <cniu>, Project <default>, Status <DONE>
+                     , Queue <irving>, Command <#!/bin/csh; #BSUB -o output;#BS
+                     UB -e error;#BSUB -n 8;#BSUB -J 520fEOS;#BSUB -q irving;#B
+                     SUB -W 96:00;#BSUB -R "span[ptile=8] same[chassis]"; sourc
+                     e /home/cniu/Apps/VASP/Ver02/vasp.csh; mkdir 1.collinear;c
+                     p INCAR-COLL 1.collinear/INCAR;cp POTCAR KPOINTS POSCAR 1.
+                     collinear;cd 1.collinear;mpiexec_hydra /home/cniu/Apps/VAS
+                     P/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinear/CONTCAR POSCAR
+                     ;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCAR;mpiexec_hydra 
+                     /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/vasp.5.2/vasp>, Sh
+                     are group charged </P71413>
+Thu Mar 21 13:58:38: Submitted from host <login05>, CWD <$HOME/cniu/SQS/5.20.fc
+                     c.1.eos/1.05>, Output File <output>, Error File <error>, 8
+                      Processors Requested, Requested Resources <span[ptile=8] 
+                     same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n3n3-13
+Fri Mar 22 06:43:54: Started on 8 Hosts/Processors <8*n3n3-13>, Execution Home 
+                     </home/cniu>, Execution CWD </home/cniu/cniu/SQS/5.20.fcc.
+                     1.eos/1.05>;
+Sat Mar 23 09:00:36: Done successfully. The CPU time used is 756208.2 seconds.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+
+
+Job <168622>, Job Name <520fEOS>, User <cniu>, Project <default>, Status <DONE>
+                     , Queue <irving>, Command <#!/bin/csh; #BSUB -o output;#BS
+                     UB -e error;#BSUB -n 8;#BSUB -J 520fEOS;#BSUB -q irving;#B
+                     SUB -W 96:00;#BSUB -R "span[ptile=8] same[chassis]"; sourc
+                     e /home/cniu/Apps/VASP/Ver02/vasp.csh; mkdir 1.collinear;c
+                     p INCAR-COLL 1.collinear/INCAR;cp POTCAR KPOINTS POSCAR 1.
+                     collinear;cd 1.collinear;mpiexec_hydra /home/cniu/Apps/VAS
+                     P/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinear/CONTCAR POSCAR
+                     ;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCAR;mpiexec_hydra 
+                     /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/vasp.5.2/vasp>, Sh
+                     are group charged </P71413>
+Thu Mar 21 13:58:38: Submitted from host <login05>, CWD <$HOME/cniu/SQS/5.20.fc
+                     c.1.eos/1.01>, Output File <output>, Error File <error>, 8
+                      Processors Requested, Requested Resources <span[ptile=8] 
+                     same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n3o2-6
+Fri Mar 22 02:14:06: Started on 8 Hosts/Processors <8*n3o2-6>, Execution Home <
+                     /home/cniu>, Execution CWD </home/cniu/cniu/SQS/5.20.fcc.1
+                     .eos/1.01>;
+Sat Mar 23 14:09:51: Done successfully. The CPU time used is 1034104.7 seconds.
+                     
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+
+
+Job <167962>, Job Name <424fEOS>, User <cniu>, Project <default>, Status <DONE>
+                     , Queue <irving>, Command <#!/bin/csh; #BSUB -o output;#BS
+                     UB -e error;#BSUB -n 8;#BSUB -J 424fEOS;#BSUB -q irving;#B
+                     SUB -W 96:00;#BSUB -R "span[ptile=8] same[chassis]"; sourc
+                     e /home/cniu/Apps/VASP/Ver02/vasp.csh; mkdir 1.collinear;c
+                     p INCAR-COLL 1.collinear/INCAR;cp POTCAR KPOINTS POSCAR 1.
+                     collinear;cd 1.collinear;mpiexec_hydra /home/cniu/Apps/VAS
+                     P/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinear/CONTCAR POSCAR
+                     ;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCAR;mpiexec_hydra 
+                     /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/vasp.5.2/vasp>, Sh
+                     are group charged </P71413>
+Thu Mar 21 11:26:03: Submitted from host <login03>, CWD <$HOME/cniu/SQS/4.24.fc
+                     c.1.eos/1.05>, Output File <output>, Error File <error>, 8
+                      Processors Requested, Requested Resources <span[ptile=8] 
+                     same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n2j6-8
+Thu Mar 21 11:26:08: Started on 8 Hosts/Processors <8*n2j6-8>, Execution Home <
+                     /home/cniu>, Execution CWD </home/cniu/cniu/SQS/4.24.fcc.1
+                     .eos/1.05>;
+Sat Mar 23 19:35:18: Done successfully. The CPU time used is 1616948.6 seconds.
+                     
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+
+
+Job <176191>, Job Name <424fEOS>, User <cniu>, Project <default>, Status <EXIT>
+                     , Queue <irving>, Command <#!/bin/csh; #BSUB -o output;#BS
+                     UB -e error;#BSUB -n 8;#BSUB -J 424fEOS;#BSUB -q irving;#B
+                     SUB -W 96:00;#BSUB -R "span[ptile=8] same[chassis]"; sourc
+                     e /home/cniu/Apps/VASP/Ver02/vasp.csh; mkdir 1.collinear;c
+                     p INCAR-COLL 1.collinear/INCAR;cp POTCAR KPOINTS POSCAR 1.
+                     collinear;cd 1.collinear;mpiexec_hydra /home/cniu/Apps/VAS
+                     P/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinear/CONTCAR POSCAR
+                     ;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCAR;mpiexec_hydra 
+                     /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/vasp.5.2/vasp>
+Sat Mar 23 21:41:49: Submitted from host <login05>, CWD <$HOME/cniu/SQS/4.24.fc
+                     c.1.eos/1.005>, Output File <output>, Error File <error>, 
+                     8 Processors Requested, Requested Resources <span[ptile=8]
+                      same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of login05
+Sat Mar 23 21:42:41: Exited
+Sat Mar 23 21:42:41: Completed <exit>; TERM_OWNER: job killed by owner.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+------------------------------------------------------------------------------
+
+Job <176192>, Job Name <424fEOS>, User <cniu>, Project <default>, Status <EXIT>
+                     , Queue <irving>, Command <#!/bin/csh; #BSUB -o output;#BS
+                     UB -e error;#BSUB -n 8;#BSUB -J 424fEOS;#BSUB -q irving;#B
+                     SUB -W 96:00;#BSUB -R "span[ptile=8] same[chassis]"; sourc
+                     e /home/cniu/Apps/VASP/Ver02/vasp.csh; mkdir 1.collinear;c
+                     p INCAR-COLL 1.collinear/INCAR;cp POTCAR KPOINTS POSCAR 1.
+                     collinear;cd 1.collinear;mpiexec_hydra /home/cniu/Apps/VAS
+                     P/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinear/CONTCAR POSCAR
+                     ;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCAR;mpiexec_hydra 
+                     /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/vasp.5.2/vasp>
+Sat Mar 23 21:41:49: Submitted from host <login05>, CWD <$HOME/cniu/SQS/4.24.fc
+                     c.1.eos/1.007>, Output File <output>, Error File <error>, 
+                     8 Processors Requested, Requested Resources <span[ptile=8]
+                      same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of login05
+Sat Mar 23 21:42:41: Exited
+Sat Mar 23 21:42:41: Completed <exit>; TERM_OWNER: job killed by owner.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+------------------------------------------------------------------------------
+
+Job <176193>, Job Name <424fEOS>, User <cniu>, Project <default>, Status <EXIT>
+                     , Queue <irving>, Command <#!/bin/csh; #BSUB -o output;#BS
+                     UB -e error;#BSUB -n 8;#BSUB -J 424fEOS;#BSUB -q irving;#B
+                     SUB -W 96:00;#BSUB -R "span[ptile=8] same[chassis]"; sourc
+                     e /home/cniu/Apps/VASP/Ver02/vasp.csh; mkdir 1.collinear;c
+                     p INCAR-COLL 1.collinear/INCAR;cp POTCAR KPOINTS POSCAR 1.
+                     collinear;cd 1.collinear;mpiexec_hydra /home/cniu/Apps/VAS
+                     P/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinear/CONTCAR POSCAR
+                     ;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCAR;mpiexec_hydra 
+                     /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/vasp.5.2/vasp>
+Sat Mar 23 21:41:49: Submitted from host <login05>, CWD <$HOME/cniu/SQS/4.24.fc
+                     c.1.eos/1.009>, Output File <output>, Error File <error>, 
+                     8 Processors Requested, Requested Resources <span[ptile=8]
+                      same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of login05
+Sat Mar 23 21:42:41: Exited
+Sat Mar 23 21:42:41: Completed <exit>; TERM_OWNER: job killed by owner.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+------------------------------------------------------------------------------
+
+Job <176194>, Job Name <424fEOS>, User <cniu>, Project <default>, Status <EXIT>
+                     , Queue <irving>, Command <#!/bin/csh; #BSUB -o output;#BS
+                     UB -e error;#BSUB -n 8;#BSUB -J 424fEOS;#BSUB -q irving;#B
+                     SUB -W 96:00;#BSUB -R "span[ptile=8] same[chassis]"; sourc
+                     e /home/cniu/Apps/VASP/Ver02/vasp.csh; mkdir 1.collinear;c
+                     p INCAR-COLL 1.collinear/INCAR;cp POTCAR KPOINTS POSCAR 1.
+                     collinear;cd 1.collinear;mpiexec_hydra /home/cniu/Apps/VAS
+                     P/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinear/CONTCAR POSCAR
+                     ;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCAR;mpiexec_hydra 
+                     /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/vasp.5.2/vasp>
+Sat Mar 23 21:41:49: Submitted from host <login05>, CWD <$HOME/cniu/SQS/4.24.fc
+                     c.1.eos/1.011>, Output File <output>, Error File <error>, 
+                     8 Processors Requested, Requested Resources <span[ptile=8]
+                      same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of login05
+Sat Mar 23 21:42:41: Exited
+Sat Mar 23 21:42:41: Completed <exit>; TERM_OWNER: job killed by owner.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+------------------------------------------------------------------------------
+
+Job <176195>, Job Name <424fEOS>, User <cniu>, Project <default>, Status <EXIT>
+                     , Queue <irving>, Command <#!/bin/csh; #BSUB -o output;#BS
+                     UB -e error;#BSUB -n 8;#BSUB -J 424fEOS;#BSUB -q irving;#B
+                     SUB -W 96:00;#BSUB -R "span[ptile=8] same[chassis]"; sourc
+                     e /home/cniu/Apps/VASP/Ver02/vasp.csh; mkdir 1.collinear;c
+                     p INCAR-COLL 1.collinear/INCAR;cp POTCAR KPOINTS POSCAR 1.
+                     collinear;cd 1.collinear;mpiexec_hydra /home/cniu/Apps/VAS
+                     P/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinear/CONTCAR POSCAR
+                     ;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCAR;mpiexec_hydra 
+                     /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/vasp.5.2/vasp>
+Sat Mar 23 21:41:49: Submitted from host <login05>, CWD <$HOME/cniu/SQS/4.24.fc
+                     c.1.eos/1.013>, Output File <output>, Error File <error>, 
+                     8 Processors Requested, Requested Resources <span[ptile=8]
+                      same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of login05
+Sat Mar 23 21:42:41: Exited
+Sat Mar 23 21:42:41: Completed <exit>; TERM_OWNER: job killed by owner.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+------------------------------------------------------------------------------
+
+Job <176196>, Job Name <424fEOS>, User <cniu>, Project <default>, Status <EXIT>
+                     , Queue <irving>, Command <#!/bin/csh; #BSUB -o output;#BS
+                     UB -e error;#BSUB -n 8;#BSUB -J 424fEOS;#BSUB -q irving;#B
+                     SUB -W 96:00;#BSUB -R "span[ptile=8] same[chassis]"; sourc
+                     e /home/cniu/Apps/VASP/Ver02/vasp.csh; mkdir 1.collinear;c
+                     p INCAR-COLL 1.collinear/INCAR;cp POTCAR KPOINTS POSCAR 1.
+                     collinear;cd 1.collinear;mpiexec_hydra /home/cniu/Apps/VAS
+                     P/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinear/CONTCAR POSCAR
+                     ;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCAR;mpiexec_hydra 
+                     /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/vasp.5.2/vasp>
+Sat Mar 23 21:41:49: Submitted from host <login05>, CWD <$HOME/cniu/SQS/4.24.fc
+                     c.1.eos/1.015>, Output File <output>, Error File <error>, 
+                     8 Processors Requested, Requested Resources <span[ptile=8]
+                      same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of login05
+Sat Mar 23 21:42:41: Exited
+Sat Mar 23 21:42:41: Completed <exit>; TERM_OWNER: job killed by owner.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+------------------------------------------------------------------------------
+
+Job <176197>, Job Name <424fEOS>, User <cniu>, Project <default>, Status <EXIT>
+                     , Queue <irving>, Command <#!/bin/csh; #BSUB -o output;#BS
+                     UB -e error;#BSUB -n 8;#BSUB -J 424fEOS;#BSUB -q irving;#B
+                     SUB -W 96:00;#BSUB -R "span[ptile=8] same[chassis]"; sourc
+                     e /home/cniu/Apps/VASP/Ver02/vasp.csh; mkdir 1.collinear;c
+                     p INCAR-COLL 1.collinear/INCAR;cp POTCAR KPOINTS POSCAR 1.
+                     collinear;cd 1.collinear;mpiexec_hydra /home/cniu/Apps/VAS
+                     P/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinear/CONTCAR POSCAR
+                     ;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCAR;mpiexec_hydra 
+                     /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/vasp.5.2/vasp>
+Sat Mar 23 21:41:49: Submitted from host <login05>, CWD <$HOME/cniu/SQS/4.24.fc
+                     c.1.eos/1.017>, Output File <output>, Error File <error>, 
+                     8 Processors Requested, Requested Resources <span[ptile=8]
+                      same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of login05
+Sat Mar 23 21:42:41: Exited
+Sat Mar 23 21:42:41: Completed <exit>; TERM_OWNER: job killed by owner.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+------------------------------------------------------------------------------
+
+Job <176198>, Job Name <424fEOS>, User <cniu>, Project <default>, Status <EXIT>
+                     , Queue <irving>, Command <#!/bin/csh; #BSUB -o output;#BS
+                     UB -e error;#BSUB -n 8;#BSUB -J 424fEOS;#BSUB -q irving;#B
+                     SUB -W 96:00;#BSUB -R "span[ptile=8] same[chassis]"; sourc
+                     e /home/cniu/Apps/VASP/Ver02/vasp.csh; mkdir 1.collinear;c
+                     p INCAR-COLL 1.collinear/INCAR;cp POTCAR KPOINTS POSCAR 1.
+                     collinear;cd 1.collinear;mpiexec_hydra /home/cniu/Apps/VAS
+                     P/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinear/CONTCAR POSCAR
+                     ;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCAR;mpiexec_hydra 
+                     /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/vasp.5.2/vasp>
+Sat Mar 23 21:41:49: Submitted from host <login05>, CWD <$HOME/cniu/SQS/4.24.fc
+                     c.1.eos/1.019>, Output File <output>, Error File <error>, 
+                     8 Processors Requested, Requested Resources <span[ptile=8]
+                      same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of login05
+Sat Mar 23 21:42:41: Exited
+Sat Mar 23 21:42:41: Completed <exit>; TERM_OWNER: job killed by owner.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+------------------------------------------------------------------------------
+
+Job <176199>, Job Name <424fEOS>, User <cniu>, Project <default>, Status <EXIT>
+                     , Queue <irving>, Command <#!/bin/csh; #BSUB -o output;#BS
+                     UB -e error;#BSUB -n 8;#BSUB -J 424fEOS;#BSUB -q irving;#B
+                     SUB -W 96:00;#BSUB -R "span[ptile=8] same[chassis]"; sourc
+                     e /home/cniu/Apps/VASP/Ver02/vasp.csh; mkdir 1.collinear;c
+                     p INCAR-COLL 1.collinear/INCAR;cp POTCAR KPOINTS POSCAR 1.
+                     collinear;cd 1.collinear;mpiexec_hydra /home/cniu/Apps/VAS
+                     P/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinear/CONTCAR POSCAR
+                     ;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCAR;mpiexec_hydra 
+                     /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/vasp.5.2/vasp>
+Sat Mar 23 21:41:49: Submitted from host <login05>, CWD <$HOME/cniu/SQS/4.24.fc
+                     c.1.eos/1.021>, Output File <output>, Error File <error>, 
+                     8 Processors Requested, Requested Resources <span[ptile=8]
+                      same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of login05
+Sat Mar 23 21:42:41: Exited
+Sat Mar 23 21:42:41: Completed <exit>; TERM_OWNER: job killed by owner.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+------------------------------------------------------------------------------
+
+Job <176200>, Job Name <424fEOS>, User <cniu>, Project <default>, Status <EXIT>
+                     , Queue <irving>, Command <#!/bin/csh; #BSUB -o output;#BS
+                     UB -e error;#BSUB -n 8;#BSUB -J 424fEOS;#BSUB -q irving;#B
+                     SUB -W 96:00;#BSUB -R "span[ptile=8] same[chassis]"; sourc
+                     e /home/cniu/Apps/VASP/Ver02/vasp.csh; mkdir 1.collinear;c
+                     p INCAR-COLL 1.collinear/INCAR;cp POTCAR KPOINTS POSCAR 1.
+                     collinear;cd 1.collinear;mpiexec_hydra /home/cniu/Apps/VAS
+                     P/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinear/CONTCAR POSCAR
+                     ;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCAR;mpiexec_hydra 
+                     /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/vasp.5.2/vasp>
+Sat Mar 23 21:41:49: Submitted from host <login05>, CWD <$HOME/cniu/SQS/4.24.fc
+                     c.1.eos/1.023>, Output File <output>, Error File <error>, 
+                     8 Processors Requested, Requested Resources <span[ptile=8]
+                      same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of login05
+Sat Mar 23 21:42:41: Exited
+Sat Mar 23 21:42:41: Completed <exit>; TERM_OWNER: job killed by owner.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+------------------------------------------------------------------------------
+
+Job <176190>, Job Name <424fEOS>, User <cniu>, Project <default>, Status <EXIT>
+                     , Queue <irving>, Command <#!/bin/csh; #BSUB -o output;#BS
+                     UB -e error;#BSUB -n 8;#BSUB -J 424fEOS;#BSUB -q irving;#B
+                     SUB -W 96:00;#BSUB -R "span[ptile=8] same[chassis]"; sourc
+                     e /home/cniu/Apps/VASP/Ver02/vasp.csh; mkdir 1.collinear;c
+                     p INCAR-COLL 1.collinear/INCAR;cp POTCAR KPOINTS POSCAR 1.
+                     collinear;cd 1.collinear;mpiexec_hydra /home/cniu/Apps/VAS
+                     P/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinear/CONTCAR POSCAR
+                     ;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCAR;mpiexec_hydra 
+                     /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/vasp.5.2/vasp>, Sh
+                     are group charged </P71413>
+Sat Mar 23 21:41:49: Submitted from host <login05>, CWD <$HOME/cniu/SQS/4.24.fc
+                     c.1.eos/1.003>, Output File <output>, Error File <error>, 
+                     8 Processors Requested, Requested Resources <span[ptile=8]
+                      same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n3n5-7
+Sat Mar 23 21:41:54: Started on 8 Hosts/Processors <8*n3n5-7>, Execution Home <
+                     /home/cniu>, Execution CWD </home/cniu/cniu/SQS/4.24.fcc.1
+                     .eos/1.003>;
+Sat Mar 23 21:44:24: Exited with exit code 9. The CPU time used is 328.3 second
+                     s.
+Sat Mar 23 21:44:24: Completed <exit>; TERM_OWNER: job killed by owner.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+
+
+Job <176176>, Job Name <520fC'>, User <cniu>, Project <default>, Status <DONE>,
+                      Queue <irving>, Command <#!/bin/csh; #BSUB -o output;#BSU
+                     B -e error;#BSUB -n 8;#BSUB -J 520fC';#BSUB -q irving;#BSU
+                     B -W 96:00;#BSUB -R "span[ptile=8] same[chassis]"; source 
+                     /home/cniu/Apps/VASP/Ver02/vasp.csh; mkdir 1.collinear;cp 
+                     INCAR-COLL 1.collinear/INCAR;cp POTCAR KPOINTS POSCAR 1.co
+                     llinear;cd 1.collinear;mpiexec_hydra /home/cniu/Apps/VASP/
+                     Ver02/vasp.5.2/vasp;cd ..; cp 1.collinear/CONTCAR POSCAR;c
+                     p 1.collinear/CHGCAR .;cp INCAR-SOC INCAR;mpiexec_hydra /h
+                     ome/cniu/Apps/VASP/Ver02/NONCOLLINEAR/vasp.5.2/vasp>, Shar
+                     e group charged </P71413>
+Sat Mar 23 21:27:55: Submitted from host <login05>, CWD <$HOME/cniu/SQS/5.20.fc
+                     c.2.elas/1.orthorhombic/1>, Output File <output>, Error Fi
+                     le <error>, 8 Processors Requested, Requested Resources <s
+                     pan[ptile=8] same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n2j6-8
+Sat Mar 23 21:28:01: Started on 8 Hosts/Processors <8*n2j6-8>, Execution Home <
+                     /home/cniu>, Execution CWD </home/cniu/cniu/SQS/5.20.fcc.2
+                     .elas/1.orthorhombic/1>;
+Sun Mar 24 07:44:59: Done successfully. The CPU time used is 296045.0 seconds.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+
+
+Job <176177>, Job Name <520fC'>, User <cniu>, Project <default>, Status <DONE>,
+                      Queue <irving>, Command <#!/bin/csh; #BSUB -o output;#BSU
+                     B -e error;#BSUB -n 8;#BSUB -J 520fC';#BSUB -q irving;#BSU
+                     B -W 96:00;#BSUB -R "span[ptile=8] same[chassis]"; source 
+                     /home/cniu/Apps/VASP/Ver02/vasp.csh; mkdir 1.collinear;cp 
+                     INCAR-COLL 1.collinear/INCAR;cp POTCAR KPOINTS POSCAR 1.co
+                     llinear;cd 1.collinear;mpiexec_hydra /home/cniu/Apps/VASP/
+                     Ver02/vasp.5.2/vasp;cd ..; cp 1.collinear/CONTCAR POSCAR;c
+                     p 1.collinear/CHGCAR .;cp INCAR-SOC INCAR;mpiexec_hydra /h
+                     ome/cniu/Apps/VASP/Ver02/NONCOLLINEAR/vasp.5.2/vasp>, Shar
+                     e group charged </P71413>
+Sat Mar 23 21:28:17: Submitted from host <login05>, CWD <$HOME/cniu/SQS/5.20.fc
+                     c.2.elas/1.orthorhombic/2>, Output File <output>, Error Fi
+                     le <error>, 8 Processors Requested, Requested Resources <s
+                     pan[ptile=8] same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n2j6-10
+Sat Mar 23 21:28:20: Started on 8 Hosts/Processors <8*n2j6-10>, Execution Home 
+                     </home/cniu>, Execution CWD </home/cniu/cniu/SQS/5.20.fcc.
+                     2.elas/1.orthorhombic/2>;
+Sun Mar 24 13:24:53: Done successfully. The CPU time used is 459000.5 seconds.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+
+
+Job <176206>, Job Name <424fEOS>, User <cniu>, Project <default>, Status <DONE>
+                     , Queue <single_chassis>, Command <#!/bin/csh; #BSUB -o ou
+                     tput;#BSUB -e error;#BSUB -n 8;#BSUB -J 424fEOS;#BSUB -q s
+                     ingle_chassis;#BSUB -W 96:00;#BSUB -R "span[ptile=8] same[
+                     chassis]"; source /home/cniu/Apps/VASP/Ver02/vasp.csh; mkd
+                     ir 1.collinear;cp INCAR-COLL 1.collinear/INCAR;cp POTCAR K
+                     POINTS POSCAR 1.collinear;cd 1.collinear;mpiexec_hydra /ho
+                     me/cniu/Apps/VASP/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinea
+                     r/CONTCAR POSCAR;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCA
+                     R;mpiexec_hydra /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/va
+                     sp.5.2/vasp>, Share group charged </P71413>
+Sat Mar 23 21:44:36: Submitted from host <login05>, CWD <$HOME/cniu/SQS/4.24.fc
+                     c.1.eos/1.013>, Output File <output>, Error File <error>, 
+                     8 Processors Requested, Requested Resources <span[ptile=8]
+                      same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n2e1-1
+Sat Mar 23 21:44:42: Started on 8 Hosts/Processors <8*n2e1-1>, Execution Home <
+                     /home/cniu>, Execution CWD </home/cniu/cniu/SQS/4.24.fcc.1
+                     .eos/1.013>;
+Sun Mar 24 18:09:14: Done successfully. The CPU time used is 587173.1 seconds.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+------------------------------------------------------------------------------
+
+Job <176207>, Job Name <424fEOS>, User <cniu>, Project <default>, Status <DONE>
+                     , Queue <single_chassis>, Command <#!/bin/csh; #BSUB -o ou
+                     tput;#BSUB -e error;#BSUB -n 8;#BSUB -J 424fEOS;#BSUB -q s
+                     ingle_chassis;#BSUB -W 96:00;#BSUB -R "span[ptile=8] same[
+                     chassis]"; source /home/cniu/Apps/VASP/Ver02/vasp.csh; mkd
+                     ir 1.collinear;cp INCAR-COLL 1.collinear/INCAR;cp POTCAR K
+                     POINTS POSCAR 1.collinear;cd 1.collinear;mpiexec_hydra /ho
+                     me/cniu/Apps/VASP/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinea
+                     r/CONTCAR POSCAR;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCA
+                     R;mpiexec_hydra /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/va
+                     sp.5.2/vasp>, Share group charged </P71413>
+Sat Mar 23 21:44:36: Submitted from host <login05>, CWD <$HOME/cniu/SQS/4.24.fc
+                     c.1.eos/1.015>, Output File <output>, Error File <error>, 
+                     8 Processors Requested, Requested Resources <span[ptile=8]
+                      same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n2e1-6
+Sat Mar 23 21:44:42: Started on 8 Hosts/Processors <8*n2e1-6>, Execution Home <
+                     /home/cniu>, Execution CWD </home/cniu/cniu/SQS/4.24.fcc.1
+                     .eos/1.015>;
+Sun Mar 24 18:33:30: Done successfully. The CPU time used is 598926.7 seconds.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+------------------------------------------------------------------------------
+
+Job <176210>, Job Name <424fEOS>, User <cniu>, Project <default>, Status <DONE>
+                     , Queue <single_chassis>, Command <#!/bin/csh; #BSUB -o ou
+                     tput;#BSUB -e error;#BSUB -n 8;#BSUB -J 424fEOS;#BSUB -q s
+                     ingle_chassis;#BSUB -W 96:00;#BSUB -R "span[ptile=8] same[
+                     chassis]"; source /home/cniu/Apps/VASP/Ver02/vasp.csh; mkd
+                     ir 1.collinear;cp INCAR-COLL 1.collinear/INCAR;cp POTCAR K
+                     POINTS POSCAR 1.collinear;cd 1.collinear;mpiexec_hydra /ho
+                     me/cniu/Apps/VASP/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinea
+                     r/CONTCAR POSCAR;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCA
+                     R;mpiexec_hydra /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/va
+                     sp.5.2/vasp>, Share group charged </P71413>
+Sat Mar 23 21:44:36: Submitted from host <login05>, CWD <$HOME/cniu/SQS/4.24.fc
+                     c.1.eos/1.021>, Output File <output>, Error File <error>, 
+                     8 Processors Requested, Requested Resources <span[ptile=8]
+                      same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n2e2-10
+Sat Mar 23 21:44:42: Started on 8 Hosts/Processors <8*n2e2-10>, Execution Home 
+                     </home/cniu>, Execution CWD </home/cniu/cniu/SQS/4.24.fcc.
+                     1.eos/1.021>;
+Sun Mar 24 18:39:58: Done successfully. The CPU time used is 601880.2 seconds.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+------------------------------------------------------------------------------
+
+Job <176205>, Job Name <424fEOS>, User <cniu>, Project <default>, Status <DONE>
+                     , Queue <single_chassis>, Command <#!/bin/csh; #BSUB -o ou
+                     tput;#BSUB -e error;#BSUB -n 8;#BSUB -J 424fEOS;#BSUB -q s
+                     ingle_chassis;#BSUB -W 96:00;#BSUB -R "span[ptile=8] same[
+                     chassis]"; source /home/cniu/Apps/VASP/Ver02/vasp.csh; mkd
+                     ir 1.collinear;cp INCAR-COLL 1.collinear/INCAR;cp POTCAR K
+                     POINTS POSCAR 1.collinear;cd 1.collinear;mpiexec_hydra /ho
+                     me/cniu/Apps/VASP/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinea
+                     r/CONTCAR POSCAR;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCA
+                     R;mpiexec_hydra /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/va
+                     sp.5.2/vasp>, Share group charged </P71413>
+Sat Mar 23 21:44:35: Submitted from host <login05>, CWD <$HOME/cniu/SQS/4.24.fc
+                     c.1.eos/1.011>, Output File <output>, Error File <error>, 
+                     8 Processors Requested, Requested Resources <span[ptile=8]
+                      same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n2e1-14
+Sat Mar 23 21:44:42: Started on 8 Hosts/Processors <8*n2e1-14>, Execution Home 
+                     </home/cniu>, Execution CWD </home/cniu/cniu/SQS/4.24.fcc.
+                     1.eos/1.011>;
+Sun Mar 24 18:49:13: Done successfully. The CPU time used is 606448.8 seconds.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+
+
+Job <176211>, Job Name <424fEOS>, User <cniu>, Project <default>, Status <DONE>
+                     , Queue <single_chassis>, Command <#!/bin/csh; #BSUB -o ou
+                     tput;#BSUB -e error;#BSUB -n 8;#BSUB -J 424fEOS;#BSUB -q s
+                     ingle_chassis;#BSUB -W 96:00;#BSUB -R "span[ptile=8] same[
+                     chassis]"; source /home/cniu/Apps/VASP/Ver02/vasp.csh; mkd
+                     ir 1.collinear;cp INCAR-COLL 1.collinear/INCAR;cp POTCAR K
+                     POINTS POSCAR 1.collinear;cd 1.collinear;mpiexec_hydra /ho
+                     me/cniu/Apps/VASP/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinea
+                     r/CONTCAR POSCAR;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCA
+                     R;mpiexec_hydra /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/va
+                     sp.5.2/vasp>, Share group charged </P71413>
+Sat Mar 23 21:44:36: Submitted from host <login05>, CWD <$HOME/cniu/SQS/4.24.fc
+                     c.1.eos/1.023>, Output File <output>, Error File <error>, 
+                     8 Processors Requested, Requested Resources <span[ptile=8]
+                      same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n2e2-11
+Sat Mar 23 21:44:42: Started on 8 Hosts/Processors <8*n2e2-11>, Execution Home 
+                     </home/cniu>, Execution CWD </home/cniu/cniu/SQS/4.24.fcc.
+                     1.eos/1.023>;
+Sun Mar 24 19:12:45: Done successfully. The CPU time used is 617607.8 seconds.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+------------------------------------------------------------------------------
+
+Job <176209>, Job Name <424fEOS>, User <cniu>, Project <default>, Status <DONE>
+                     , Queue <single_chassis>, Command <#!/bin/csh; #BSUB -o ou
+                     tput;#BSUB -e error;#BSUB -n 8;#BSUB -J 424fEOS;#BSUB -q s
+                     ingle_chassis;#BSUB -W 96:00;#BSUB -R "span[ptile=8] same[
+                     chassis]"; source /home/cniu/Apps/VASP/Ver02/vasp.csh; mkd
+                     ir 1.collinear;cp INCAR-COLL 1.collinear/INCAR;cp POTCAR K
+                     POINTS POSCAR 1.collinear;cd 1.collinear;mpiexec_hydra /ho
+                     me/cniu/Apps/VASP/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinea
+                     r/CONTCAR POSCAR;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCA
+                     R;mpiexec_hydra /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/va
+                     sp.5.2/vasp>, Share group charged </P71413>
+Sat Mar 23 21:44:36: Submitted from host <login05>, CWD <$HOME/cniu/SQS/4.24.fc
+                     c.1.eos/1.019>, Output File <output>, Error File <error>, 
+                     8 Processors Requested, Requested Resources <span[ptile=8]
+                      same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n2e1-8
+Sat Mar 23 21:44:42: Started on 8 Hosts/Processors <8*n2e1-8>, Execution Home <
+                     /home/cniu>, Execution CWD </home/cniu/cniu/SQS/4.24.fcc.1
+                     .eos/1.019>;
+Sun Mar 24 19:13:35: Done successfully. The CPU time used is 618112.4 seconds.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+------------------------------------------------------------------------------
+
+Job <176208>, Job Name <424fEOS>, User <cniu>, Project <default>, Status <DONE>
+                     , Queue <single_chassis>, Command <#!/bin/csh; #BSUB -o ou
+                     tput;#BSUB -e error;#BSUB -n 8;#BSUB -J 424fEOS;#BSUB -q s
+                     ingle_chassis;#BSUB -W 96:00;#BSUB -R "span[ptile=8] same[
+                     chassis]"; source /home/cniu/Apps/VASP/Ver02/vasp.csh; mkd
+                     ir 1.collinear;cp INCAR-COLL 1.collinear/INCAR;cp POTCAR K
+                     POINTS POSCAR 1.collinear;cd 1.collinear;mpiexec_hydra /ho
+                     me/cniu/Apps/VASP/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinea
+                     r/CONTCAR POSCAR;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCA
+                     R;mpiexec_hydra /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/va
+                     sp.5.2/vasp>, Share group charged </P71413>
+Sat Mar 23 21:44:36: Submitted from host <login05>, CWD <$HOME/cniu/SQS/4.24.fc
+                     c.1.eos/1.017>, Output File <output>, Error File <error>, 
+                     8 Processors Requested, Requested Resources <span[ptile=8]
+                      same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n2e1-12
+Sat Mar 23 21:44:42: Started on 8 Hosts/Processors <8*n2e1-12>, Execution Home 
+                     </home/cniu>, Execution CWD </home/cniu/cniu/SQS/4.24.fcc.
+                     1.eos/1.017>;
+Sun Mar 24 19:15:58: Done successfully. The CPU time used is 619567.4 seconds.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+
+
+Job <176201>, Job Name <424fEOS>, User <cniu>, Project <default>, Status <DONE>
+                     , Queue <single_chassis>, Command <#!/bin/csh; #BSUB -o ou
+                     tput;#BSUB -e error;#BSUB -n 8;#BSUB -J 424fEOS;#BSUB -q s
+                     ingle_chassis;#BSUB -W 96:00;#BSUB -R "span[ptile=8] same[
+                     chassis]"; source /home/cniu/Apps/VASP/Ver02/vasp.csh; mkd
+                     ir 1.collinear;cp INCAR-COLL 1.collinear/INCAR;cp POTCAR K
+                     POINTS POSCAR 1.collinear;cd 1.collinear;mpiexec_hydra /ho
+                     me/cniu/Apps/VASP/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinea
+                     r/CONTCAR POSCAR;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCA
+                     R;mpiexec_hydra /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/va
+                     sp.5.2/vasp>, Share group charged </P71413>
+Sat Mar 23 21:44:35: Submitted from host <login05>, CWD <$HOME/cniu/SQS/4.24.fc
+                     c.1.eos/1.003>, Output File <output>, Error File <error>, 
+                     8 Processors Requested, Requested Resources <span[ptile=8]
+                      same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n2e4-9
+Sat Mar 23 21:44:42: Started on 8 Hosts/Processors <8*n2e4-9>, Execution Home <
+                     /home/cniu>, Execution CWD </home/cniu/cniu/SQS/4.24.fcc.1
+                     .eos/1.003>;
+Mon Mar 25 04:22:39: Done successfully. The CPU time used is 880080.2 seconds.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+
+
+Job <176202>, Job Name <424fEOS>, User <cniu>, Project <default>, Status <DONE>
+                     , Queue <single_chassis>, Command <#!/bin/csh; #BSUB -o ou
+                     tput;#BSUB -e error;#BSUB -n 8;#BSUB -J 424fEOS;#BSUB -q s
+                     ingle_chassis;#BSUB -W 96:00;#BSUB -R "span[ptile=8] same[
+                     chassis]"; source /home/cniu/Apps/VASP/Ver02/vasp.csh; mkd
+                     ir 1.collinear;cp INCAR-COLL 1.collinear/INCAR;cp POTCAR K
+                     POINTS POSCAR 1.collinear;cd 1.collinear;mpiexec_hydra /ho
+                     me/cniu/Apps/VASP/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinea
+                     r/CONTCAR POSCAR;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCA
+                     R;mpiexec_hydra /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/va
+                     sp.5.2/vasp>, Share group charged </P71413>
+Sat Mar 23 21:44:35: Submitted from host <login05>, CWD <$HOME/cniu/SQS/4.24.fc
+                     c.1.eos/1.005>, Output File <output>, Error File <error>, 
+                     8 Processors Requested, Requested Resources <span[ptile=8]
+                      same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n2e4-14
+Sat Mar 23 21:44:42: Started on 8 Hosts/Processors <8*n2e4-14>, Execution Home 
+                     </home/cniu>, Execution CWD </home/cniu/cniu/SQS/4.24.fcc.
+                     1.eos/1.005>;
+Mon Mar 25 07:27:43: Done successfully. The CPU time used is 968542.2 seconds.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+
+
+Job <176203>, Job Name <424fEOS>, User <cniu>, Project <default>, Status <DONE>
+                     , Queue <single_chassis>, Command <#!/bin/csh; #BSUB -o ou
+                     tput;#BSUB -e error;#BSUB -n 8;#BSUB -J 424fEOS;#BSUB -q s
+                     ingle_chassis;#BSUB -W 96:00;#BSUB -R "span[ptile=8] same[
+                     chassis]"; source /home/cniu/Apps/VASP/Ver02/vasp.csh; mkd
+                     ir 1.collinear;cp INCAR-COLL 1.collinear/INCAR;cp POTCAR K
+                     POINTS POSCAR 1.collinear;cd 1.collinear;mpiexec_hydra /ho
+                     me/cniu/Apps/VASP/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinea
+                     r/CONTCAR POSCAR;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCA
+                     R;mpiexec_hydra /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/va
+                     sp.5.2/vasp>, Share group charged </P71413>
+Sat Mar 23 21:44:35: Submitted from host <login05>, CWD <$HOME/cniu/SQS/4.24.fc
+                     c.1.eos/1.007>, Output File <output>, Error File <error>, 
+                     8 Processors Requested, Requested Resources <span[ptile=8]
+                      same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n2e4-13
+Sat Mar 23 21:44:42: Started on 8 Hosts/Processors <8*n2e4-13>, Execution Home 
+                     </home/cniu>, Execution CWD </home/cniu/cniu/SQS/4.24.fcc.
+                     1.eos/1.007>;
+Mon Mar 25 12:41:47: Done successfully. The CPU time used is 1120493.9 seconds.
+                     
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+
+
+Job <178589>, Job Name <416fVIB>, User <cniu>, Project <default>, Status <EXIT>
+                     , Queue <irving>, Command <#!/bin/csh; #BSUB -o output;#BS
+                     UB -e error;#BSUB -n 8;#BSUB -J 416fVIB;#BSUB -q irving;#B
+                     SUB -W 996:00;#BSUB -R "span[ptile=8] same[chassis]"; sour
+                     ce /home/cniu/Apps/VASP/Ver02/vasp.csh; mpiexec_hydra /hom
+                     e/cniu/Apps/VASP/Ver02/vasp.5.2/vasp>
+Mon Mar 25 11:50:47: Submitted from host <login03>, CWD <$HOME/cniu/SQS/4.16.fc
+                     c.5.vib/1.relax>, Output File <output>, Error File <error>
+                     , 8 Processors Requested, Requested Resources <span[ptile=
+                     8] same[chassis]>;
+
+ RUNLIMIT                
+ 59760.0 min of login03
+Mon Mar 25 13:43:46: Exited
+Mon Mar 25 13:43:46: Completed <exit>; TERM_OWNER: job killed by owner.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+
+
+Job <176204>, Job Name <424fEOS>, User <cniu>, Project <default>, Status <DONE>
+                     , Queue <single_chassis>, Command <#!/bin/csh; #BSUB -o ou
+                     tput;#BSUB -e error;#BSUB -n 8;#BSUB -J 424fEOS;#BSUB -q s
+                     ingle_chassis;#BSUB -W 96:00;#BSUB -R "span[ptile=8] same[
+                     chassis]"; source /home/cniu/Apps/VASP/Ver02/vasp.csh; mkd
+                     ir 1.collinear;cp INCAR-COLL 1.collinear/INCAR;cp POTCAR K
+                     POINTS POSCAR 1.collinear;cd 1.collinear;mpiexec_hydra /ho
+                     me/cniu/Apps/VASP/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinea
+                     r/CONTCAR POSCAR;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCA
+                     R;mpiexec_hydra /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/va
+                     sp.5.2/vasp>, Share group charged </P71413>
+Sat Mar 23 21:44:35: Submitted from host <login05>, CWD <$HOME/cniu/SQS/4.24.fc
+                     c.1.eos/1.009>, Output File <output>, Error File <error>, 
+                     8 Processors Requested, Requested Resources <span[ptile=8]
+                      same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n2e4-11
+Sat Mar 23 21:44:42: Started on 8 Hosts/Processors <8*n2e4-11>, Execution Home 
+                     </home/cniu>, Execution CWD </home/cniu/cniu/SQS/4.24.fcc.
+                     1.eos/1.009>;
+Mon Mar 25 16:04:59: Done successfully. The CPU time used is 1216767.9 seconds.
+                     
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+
+
+Job <176180>, Job Name <520fC'>, User <cniu>, Project <default>, Status <DONE>,
+                      Queue <irving>, Command <#!/bin/csh; #BSUB -o output;#BSU
+                     B -e error;#BSUB -n 8;#BSUB -J 520fC';#BSUB -q irving;#BSU
+                     B -W 96:00;#BSUB -R "span[ptile=8] same[chassis]"; source 
+                     /home/cniu/Apps/VASP/Ver02/vasp.csh; mkdir 1.collinear;cp 
+                     INCAR-COLL 1.collinear/INCAR;cp POTCAR KPOINTS POSCAR 1.co
+                     llinear;cd 1.collinear;mpiexec_hydra /home/cniu/Apps/VASP/
+                     Ver02/vasp.5.2/vasp;cd ..; cp 1.collinear/CONTCAR POSCAR;c
+                     p 1.collinear/CHGCAR .;cp INCAR-SOC INCAR;mpiexec_hydra /h
+                     ome/cniu/Apps/VASP/Ver02/NONCOLLINEAR/vasp.5.2/vasp>, Shar
+                     e group charged </P71413>
+Sat Mar 23 21:29:04: Submitted from host <login05>, CWD <$HOME/cniu/SQS/5.20.fc
+                     c.2.elas/1.orthorhombic/5>, Output File <output>, Error Fi
+                     le <error>, 8 Processors Requested, Requested Resources <s
+                     pan[ptile=8] same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n3n5-11
+Sat Mar 23 21:29:10: Started on 8 Hosts/Processors <8*n3n5-11>, Execution Home 
+                     </home/cniu>, Execution CWD </home/cniu/cniu/SQS/5.20.fcc.
+                     2.elas/1.orthorhombic/5>;
+Mon Mar 25 17:22:47: Done successfully. The CPU time used is 1263351.6 seconds.
+                     
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+
+
+Job <176185>, Job Name <520fC44>, User <cniu>, Project <default>, Status <DONE>
+                     , Queue <irving>, Command <#!/bin/csh; #BSUB -o output;#BS
+                     UB -e error;#BSUB -n 8;#BSUB -J 520fC44;#BSUB -q irving;#B
+                     SUB -W 96:00;#BSUB -R "span[ptile=8] same[chassis]"; sourc
+                     e /home/cniu/Apps/VASP/Ver02/vasp.csh; mkdir 1.collinear;c
+                     p INCAR-COLL 1.collinear/INCAR;cp POTCAR KPOINTS POSCAR 1.
+                     collinear;cd 1.collinear;mpiexec_hydra /home/cniu/Apps/VAS
+                     P/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinear/CONTCAR POSCAR
+                     ;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCAR;mpiexec_hydra 
+                     /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/vasp.5.2/vasp>, Sh
+                     are group charged </P71413>
+Sat Mar 23 21:31:10: Submitted from host <login05>, CWD <$HOME/cniu/SQS/5.20.fc
+                     c.2.elas/2.monoclinic/5>, Output File <output>, Error File
+                      <error>, 8 Processors Requested, Requested Resources <spa
+                     n[ptile=8] same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n3l3-10
+Sat Mar 23 21:31:15: Started on 8 Hosts/Processors <8*n3l3-10>, Execution Home 
+                     </home/cniu>, Execution CWD </home/cniu/cniu/SQS/5.20.fcc.
+                     2.elas/2.monoclinic/5>;
+Mon Mar 25 19:20:42: Done successfully. The CPU time used is 1318302.8 seconds.
+                     
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+
+
+Job <176184>, Job Name <520fC44>, User <cniu>, Project <default>, Status <DONE>
+                     , Queue <irving>, Command <#!/bin/csh; #BSUB -o output;#BS
+                     UB -e error;#BSUB -n 8;#BSUB -J 520fC44;#BSUB -q irving;#B
+                     SUB -W 96:00;#BSUB -R "span[ptile=8] same[chassis]"; sourc
+                     e /home/cniu/Apps/VASP/Ver02/vasp.csh; mkdir 1.collinear;c
+                     p INCAR-COLL 1.collinear/INCAR;cp POTCAR KPOINTS POSCAR 1.
+                     collinear;cd 1.collinear;mpiexec_hydra /home/cniu/Apps/VAS
+                     P/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinear/CONTCAR POSCAR
+                     ;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCAR;mpiexec_hydra 
+                     /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/vasp.5.2/vasp>, Sh
+                     are group charged </P71413>
+Sat Mar 23 21:30:57: Submitted from host <login05>, CWD <$HOME/cniu/SQS/5.20.fc
+                     c.2.elas/2.monoclinic/4>, Output File <output>, Error File
+                      <error>, 8 Processors Requested, Requested Resources <spa
+                     n[ptile=8] same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n3l2-2
+Sat Mar 23 21:31:02: Started on 8 Hosts/Processors <8*n3l2-2>, Execution Home <
+                     /home/cniu>, Execution CWD </home/cniu/cniu/SQS/5.20.fcc.2
+                     .elas/2.monoclinic/4>;
+Tue Mar 26 00:22:29: Done successfully. The CPU time used is 1463118.8 seconds.
+                     
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+
+
+Job <176183>, Job Name <520fC44>, User <cniu>, Project <default>, Status <DONE>
+                     , Queue <irving>, Command <#!/bin/csh; #BSUB -o output;#BS
+                     UB -e error;#BSUB -n 8;#BSUB -J 520fC44;#BSUB -q irving;#B
+                     SUB -W 96:00;#BSUB -R "span[ptile=8] same[chassis]"; sourc
+                     e /home/cniu/Apps/VASP/Ver02/vasp.csh; mkdir 1.collinear;c
+                     p INCAR-COLL 1.collinear/INCAR;cp POTCAR KPOINTS POSCAR 1.
+                     collinear;cd 1.collinear;mpiexec_hydra /home/cniu/Apps/VAS
+                     P/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinear/CONTCAR POSCAR
+                     ;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCAR;mpiexec_hydra 
+                     /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/vasp.5.2/vasp>, Sh
+                     are group charged </P71413>
+Sat Mar 23 21:30:44: Submitted from host <login05>, CWD <$HOME/cniu/SQS/5.20.fc
+                     c.2.elas/2.monoclinic/3>, Output File <output>, Error File
+                      <error>, 8 Processors Requested, Requested Resources <spa
+                     n[ptile=8] same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n3l2-1
+Sat Mar 23 21:30:50: Started on 8 Hosts/Processors <8*n3l2-1>, Execution Home <
+                     /home/cniu>, Execution CWD </home/cniu/cniu/SQS/5.20.fcc.2
+                     .elas/2.monoclinic/3>;
+Tue Mar 26 01:26:52: Done successfully. The CPU time used is 1494120.0 seconds.
+                     
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+
+
+Job <179703>, Job Name <416fVIB>, User <cniu>, Project <default>, Status <DONE>
+                     , Queue <single_chassis>, Command <#!/bin/csh; #BSUB -o ou
+                     tput;#BSUB -e error;#BSUB -n 8;#BSUB -J 416fVIB;#BSUB -q s
+                     ingle_chassis;#BSUB -W 96:00;#BSUB -R "span[ptile=8] same[
+                     chassis]"; source /home/cniu/Apps/VASP/Ver02/vasp.csh; mpi
+                     exec_hydra /home/cniu/Apps/VASP/Ver02/vasp.5.2/vasp>, Shar
+                     e group charged </P71413>
+Mon Mar 25 13:44:25: Submitted from host <login01>, CWD <$HOME/cniu/SQS/4.16.fc
+                     c.5.vib/1.relax>, Output File <output>, Error File <error>
+                     , 8 Processors Requested, Requested Resources <span[ptile=
+                     8] same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n2e4-13
+Mon Mar 25 13:44:33: Started on 8 Hosts/Processors <8*n2e4-13>, Execution Home 
+                     </home/cniu>, Execution CWD </home/cniu/cniu/SQS/4.16.fcc.
+                     5.vib/1.relax>;
+Tue Mar 26 02:58:24: Done successfully. The CPU time used is 380703.2 seconds.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+
+
+Job <176178>, Job Name <520fC'>, User <cniu>, Project <default>, Status <DONE>,
+                      Queue <irving>, Command <#!/bin/csh; #BSUB -o output;#BSU
+                     B -e error;#BSUB -n 8;#BSUB -J 520fC';#BSUB -q irving;#BSU
+                     B -W 96:00;#BSUB -R "span[ptile=8] same[chassis]"; source 
+                     /home/cniu/Apps/VASP/Ver02/vasp.csh; mkdir 1.collinear;cp 
+                     INCAR-COLL 1.collinear/INCAR;cp POTCAR KPOINTS POSCAR 1.co
+                     llinear;cd 1.collinear;mpiexec_hydra /home/cniu/Apps/VASP/
+                     Ver02/vasp.5.2/vasp;cd ..; cp 1.collinear/CONTCAR POSCAR;c
+                     p 1.collinear/CHGCAR .;cp INCAR-SOC INCAR;mpiexec_hydra /h
+                     ome/cniu/Apps/VASP/Ver02/NONCOLLINEAR/vasp.5.2/vasp>, Shar
+                     e group charged </P71413>
+Sat Mar 23 21:28:36: Submitted from host <login05>, CWD <$HOME/cniu/SQS/5.20.fc
+                     c.2.elas/1.orthorhombic/3>, Output File <output>, Error Fi
+                     le <error>, 8 Processors Requested, Requested Resources <s
+                     pan[ptile=8] same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n3n2-4
+Sat Mar 23 21:28:38: Started on 8 Hosts/Processors <8*n3n2-4>, Execution Home <
+                     /home/cniu>, Execution CWD </home/cniu/cniu/SQS/5.20.fcc.2
+                     .elas/1.orthorhombic/3>;
+Tue Mar 26 07:13:45: Done successfully. The CPU time used is 1662154.0 seconds.
+                     
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+
+
+Job <156136>, Job Name <424h0>, User <cniu>, Project <default>, Status <DONE>, 
+                     Queue <irving>, Command <#! /bin/csh; #BSUB -o output;#BSU
+                     B -e error;#BSUB -J 424h0;#BSUB -q irving;#BSUB -W 999:00;
+                     #BSUB -R "em64t span[ptile=8] same[chassis]"; corrdump -l=
+                     rndstr.in -ro -noe -nop -clus -2=1.74;mcsqs -n 24>, Share 
+                     group charged </P71413>
+Mon Mar 18 16:17:26: Submitted from host <login01>, CWD <$HOME/cniu/SQS/4.24.hc
+                     p.0.mcsqs>, Output File <output>, Error File <error>, Requ
+                     ested Resources <em64t span[ptile=8] same[chassis]>;
+
+ RUNLIMIT                
+ 59940.0 min of n3o2-10
+Mon Mar 18 16:17:31: Started on <n3o2-10>, Execution Home </home/cniu>, Executi
+                     on CWD </home/cniu/cniu/SQS/4.24.hcp.0.mcsqs>;
+Tue Mar 26 09:53:04: Done successfully. The CPU time used is 668034.1 seconds.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+
+
+Job <180552>, Job Name <424fC'>, User <cniu>, Project <default>, Status <DONE>,
+                      Queue <single_chassis>, Command <#!/bin/csh; #BSUB -o out
+                     put;#BSUB -e error;#BSUB -n 8;#BSUB -J 424fC';#BSUB -q sin
+                     gle_chassis;#BSUB -W 96:00;#BSUB -R "span[ptile=8] same[ch
+                     assis]"; source /home/cniu/Apps/VASP/Ver02/vasp.csh; mkdir
+                      1.collinear;cp INCAR-COLL 1.collinear/INCAR;cp POTCAR KPO
+                     INTS POSCAR 1.collinear;cd 1.collinear;mpiexec_hydra /home
+                     /cniu/Apps/VASP/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinear/
+                     CONTCAR POSCAR;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCAR;
+                     mpiexec_hydra /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/vasp
+                     .5.2/vasp>, Share group charged </P71413>
+Mon Mar 25 17:35:02: Submitted from host <login01>, CWD <$HOME/cniu/SQS/4.24.fc
+                     c.2.elas/1.orthorhombic/1>, Output File <output>, Error Fi
+                     le <error>, 8 Processors Requested, Requested Resources <s
+                     pan[ptile=8] same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n2l5-4
+Mon Mar 25 21:46:30: Started on 8 Hosts/Processors <8*n2l5-4>, Execution Home <
+                     /home/cniu>, Execution CWD </home/cniu/cniu/SQS/4.24.fcc.2
+                     .elas/1.orthorhombic/1>;
+Tue Mar 26 15:05:19: Done successfully. The CPU time used is 498360.8 seconds.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+------------------------------------------------------------------------------
+
+Job <180560>, Job Name <424fC44>, User <cniu>, Project <default>, Status <DONE>
+                     , Queue <single_chassis>, Command <#!/bin/csh; #BSUB -o ou
+                     tput;#BSUB -e error;#BSUB -n 8;#BSUB -J 424fC44;#BSUB -q s
+                     ingle_chassis;#BSUB -W 96:00;#BSUB -R "span[ptile=8] same[
+                     chassis]"; source /home/cniu/Apps/VASP/Ver02/vasp.csh; mkd
+                     ir 1.collinear;cp INCAR-COLL 1.collinear/INCAR;cp POTCAR K
+                     POINTS POSCAR 1.collinear;cd 1.collinear;mpiexec_hydra /ho
+                     me/cniu/Apps/VASP/Ver02/vasp.5.2/vasp;cd ..; cp 1.collinea
+                     r/CONTCAR POSCAR;cp 1.collinear/CHGCAR .;cp INCAR-SOC INCA
+                     R;mpiexec_hydra /home/cniu/Apps/VASP/Ver02/NONCOLLINEAR/va
+                     sp.5.2/vasp>, Share group charged </P71413>
+Mon Mar 25 17:37:41: Submitted from host <login01>, CWD <$HOME/cniu/SQS/4.24.fc
+                     c.2.elas/2.monoclinic/2>, Output File <output>, Error File
+                      <error>, 8 Processors Requested, Requested Resources <spa
+                     n[ptile=8] same[chassis]>;
+
+ RUNLIMIT                
+ 5760.0 min of n2l5-8
+Tue Mar 26 00:08:57: Started on 8 Hosts/Processors <8*n2l5-8>, Execution Home <
+                     /home/cniu>, Execution CWD </home/cniu/cniu/SQS/4.24.fcc.2
+                     .elas/2.monoclinic/2>;
+Tue Mar 26 15:37:19: Done successfully. The CPU time used is 445365.3 seconds.
+
+ SCHEDULING PARAMETERS:
+           r15s   r1m  r15m   ut      pg    io   ls    it    tmp    swp    mem
+ loadSched   -     -     -     -       -     -    -     -     -      -      -  
+ loadStop    -     -     -     -       -     -    -     -     -      -      -  
+
+            share 
+ loadSched     -  
+ loadStop      -  
+

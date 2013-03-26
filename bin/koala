@@ -1,0 +1,4 @@
+#! /bin/tcsh
+
+echo List of koala commands:
+echo koala_vaspmurfit  - Fit Murnaghan EOS.
