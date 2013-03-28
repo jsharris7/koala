@@ -8,4 +8,5 @@ if ( $SHELL != "/bin/tcsh" && $SHELL != "/bin/csh" ) then
 else
     $CC ./src/koala.cpp -o ./bin/koala
     $CC ./src/koala_elec_entro.cpp -o ./bin/koala_elec_entro
+    $CC ./src/koala_dire2cart.cpp -o ./bin/koala_dire2cart
 endif

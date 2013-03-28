@@ -1,2 +1,57 @@
-koala
-=====
+# koala
+## What is *koala*?
+*koala* is a toolkit for HPC users at NCSU. It is written in C-Shell language or C++. 
+
+Here is a quick look at what *koala* can do.
+
+- `koala`
+    - List all the following commands.
+- `koala_dire2cart [file]`
+    - Convert "Direct" to "Cartesian".
+    - Input: POSCAR (default)
+    - Output: `[file].cart`
+- `koala_elec_entro`
+    - Calculate electronic entropy.
+    - Input: DOSCAR
+    - Output: Elec_entropy.dat
+- `koala_kill`
+    - Kill selected LSF jobs.
+- `koala_monitor`
+    - Keep an eye on finished LSF jobs.
+    - Runs on background.
+    - Finished jobs saved at ~/.koala
+- `koala_plot_dos`
+    - Plot Total DOS.
+    - Input: DOSCAR
+    - Output: TDOS.png
+- `koala_plot_mag`
+    - Plot animation of magnetic moments.
+    - Input: CONTCAR, OUTCAR
+    - Output: mag.gif
+
+## Installation
+
+### koala_plot_mag
+1. Install latest ImageMagick.
+
+    mkdir ~/Apps/ImageMagick
+    cd ~/Apps/ImageMagick
+    wget http://www.imagemagick.org/download/ImageMagick.tar.gz
+    tar xzf ImageMagick.tar.gz
+    cd ImageMagick*
+    ./configure --prefix=~/Apps/ImageMagick
+    make
+    make install
+
+2. Install latest Gnuplot
+
+    mkdir ~/Apps/Gnuplot
+    cd ~/Apps/Gnuplot
+    wget http://downloads.sourceforge.net/project/gnuplot/gnuplot/4.6.2/gnuplot-4.6.2.tar.gz
+    tar xzf gnuplot-4.6.2.tar.gz
+    cd gnuplot-4.6.2
+    ./configure --prefix=~/Apps/Gnuplot
+    make
+    make install
+
+

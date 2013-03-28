@@ -21,7 +21,7 @@ awk '{print $1*'$scale',$2*'$scale',$3*'$scale'}' mag.tmp1 > mag.tmp2
 mv mag.tmp2 mag.tmp1
 
 # Extract x y z from CONTCAR
-vasputil_direct2cartesian CONTCAR
+koala_dire2cart CONTCAR
 tail -$nAtom CONTCAR.cart > mag.tmp2
 cp mag.tmp2 mag.atoms
 # Create x y z dx dy dz
@@ -52,19 +52,19 @@ splot 'mag.1' u 1:2:3:4:5:6 with vectors notitle lc rgb 'red', \
       'mag.atom2' w circles title columnheader(1)lc rgb 'black',\
       'mag.atom3' w circles title columnheader(1)lc rgb 'blue',\
       'mag.atom4' w circles title columnheader(1)lc rgb 'purple'
+
+set term png size 640,640
+set lmargin 0
+set rmargin 0
+set tmargin 0
+set bmargin 0
 do for [ii=1:36] {
-    set term png size 640,640
     set output sprintf('mag_frame%03.0f.png',ii)
     set view 60,10*ii
-    set lmargin 0
-    set rmargin 0
-    set tmargin 0
-    set bmargin 0
-    set key at 2,4,4
     rep
 }
 EOF
 gnuplot < gnu.script
 rm gnu.script
 convert mag_frame* mag.gif
-rm mag_frame*
+rm mag_frame* mag.? mag.atom?
