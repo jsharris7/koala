@@ -15,7 +15,7 @@ Here is a quick look at what *koala* can do.
     - Input: DOSCAR
     - Output: Elec_entropy.dat
 - koala_kill
-    - Kill selected LSF jobs.
+    - Kill LSF jobs based on user selection.
 - koala_monitor
     - Keep an eye on finished LSF jobs.
     - Runs on background.
@@ -30,6 +30,19 @@ Here is a quick look at what *koala* can do.
     - Output: mag.gif
 
 ## Installation
+
+### 1. Install Github
+```shell
+mkdir ~/Apps/Github
+cd ~/Apps/Github
+wget --no-check-certificate https://github.com/git/git/archive/master.zip
+unzip master
+cd git-master
+make configure
+./configure --prefix=$HOME/Apps/Github
+make all
+make install
+```
 
 ### koala_plot_mag
 1. Install latest ImageMagick.
