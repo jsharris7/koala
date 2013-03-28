@@ -1,0 +1,11 @@
+#! /bin/tcsh
+
+set CC = c++
+
+if ( $SHELL != "/bin/tcsh" && $SHELL != "/bin/csh" ) then
+    echo "Current shell is not /bin/tcsh or /bin/csh."
+    echo "Installation failed."
+else
+    $CC ./src/koala.cpp -o ./bin/koala
+    $CC ./src/koala_elec_entro.cpp -o ./bin/koala_elec_entro
+endif

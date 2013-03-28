@@ -1,22 +1,24 @@
 #! /bin/tcsh
 
-set koala = /home/cniu/koala
+if ( ! -d ~/.koala ) then
+    mkdir ~/.koala
+endif
 
-if ( -e $koala/save/running ) then
+if ( -e ~/.koala/running ) then
     echo "koala_monitor is already running."
 else
-    cat > $koala/save/monitor.tcsh << EOF
-touch $koala/save/running
-while ( ! -e $koala/save/stop )
-    bjobs -d | tail -n +2 >> $koala/save/finished.jobs
-    bjobs -dl >> $koala/save/finished.details
-    if ( -e $koala/save/stopped ) then
-        rm $koala/save/stopped
+    cat > ~/.koala/monitor.tcsh << EOF
+touch ~/.koala/running
+while ( ! -e ~/.koala/stop )
+    bjobs -d | tail -n +2 >> ~/.koala/finished.jobs
+    bjobs -dl >> ~/.koala/finished.details
+    if ( -e ~/.koala/stopped ) then
+        rm ~/.koala/stopped
     endif
     sleep 3600
 end
-rm $koala/save/stop $koala/save/running
-touch $koala/save/stopped
+rm ~/.koala/stop ~/.koala/running
+touch ~/.koala/stopped
 EOF
-    nohup tcsh $koala/save/monitor.tcsh &
+    nohup tcsh ~/.koala/monitor.tcsh &
 endif

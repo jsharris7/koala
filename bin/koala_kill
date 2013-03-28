@@ -1,18 +1,26 @@
 #! /bin/tcsh                                                                            
-set koala = /home/cniu/koala
 
-cat > $koala/save/kill.sav << EOF   
-==== Delete this line and jobs you DO NOT want to kill ====
+if ( ! -d ~/.koala ) then
+    mkdir ~/.koala
+endif
+
+cat > ~/.koala/kill.tmp << EOF   
+#### Any jobs left will be killed! ####
 EOF
-bjobs >> $koala/save/kill.sav   # save jobs in a file
-vim $koala/save/kill.sav        # let user choose jobs to kill
-echo "I will kill these jobs:"
-cat $koala/save/kill.sav        # give user last change to abort
+bjobs >> ~/.koala/kill.tmp   # tmpe jobs in a file
+vim ~/.koala/kill.tmp        # let user choose jobs to kill
+echo "These jobs will be killed:"
+cat ~/.koala/kill.tmp        # give user last change to abort
 echo -n "Are you sure? (y or n):"
 set kill = $<
 if ( $kill == y ) then  # kill selected jobs
-    set id = `awk '{print $1}' $koala/save/kill.sav`
-    bkill $id
+    set id = `awk '{print $1}' ~/.koala/kill.tmp`
+    foreach i ( $id )
+        set test = `echo $i | grep "^[0-9]"`
+        if ( $test ) then
+            bkill $i
+        endif
+    end
 endif
 
-rm $koala/save/kill.sav         # delete the file
+rm ~/.koala/kill.tmp         # delete the file
