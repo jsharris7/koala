@@ -34,17 +34,20 @@ Here is a quick look at what *koala* can do.
 ### koala_plot_mag
 1. Install latest ImageMagick.
 
-    mkdir ~/Apps/ImageMagick
-    cd ~/Apps/ImageMagick
-    wget http://www.imagemagick.org/download/ImageMagick.tar.gz
-    tar xzf ImageMagick.tar.gz
-    cd ImageMagick*
-    ./configure --prefix=~/Apps/ImageMagick
-    make
-    make install
+```shell
+mkdir ~/Apps/ImageMagick
+cd ~/Apps/ImageMagick
+wget http://www.imagemagick.org/download/ImageMagick.tar.gz
+tar xzf ImageMagick.tar.gz
+cd ImageMagick*
+./configure --prefix=~/Apps/ImageMagick
+make
+make install
+````
 
 2. Install latest Gnuplot
 
+```shell
     mkdir ~/Apps/Gnuplot
     cd ~/Apps/Gnuplot
     wget http://downloads.sourceforge.net/project/gnuplot/gnuplot/4.6.2/gnuplot-4.6.2.tar.gz
@@ -53,5 +56,4 @@ Here is a quick look at what *koala* can do.
     ./configure --prefix=~/Apps/Gnuplot
     make
     make install
-
-
+```
