@@ -29,7 +29,7 @@
 ## Installation
 
 ### 1. Install Github
-```shell
+```bash
 mkdir ~/Apps/Github
 cd ~/Apps/Github
 wget --no-check-certificate https://github.com/git/git/archive/master.zip
@@ -39,6 +39,7 @@ make configure
 ./configure --prefix=$HOME/Apps/Github
 make all
 make install
+echo "setenv GIT_SSL_NO_VERIFY TURE" >> ~/.tcshrc
 ```
 
 ### koala_plot_mag
