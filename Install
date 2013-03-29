@@ -1,12 +1,22 @@
-#! /bin/tcsh
+#! /bin/tcsh -f
 
+# This is where you place koala executables.
+# (I recommend not to use the koala directory in case
+# the executables get overwritten when updating koala.)
+set DIR = $HOME/bin
+
+# This is your C compiler:
 set CC = c++
 
-if ( $SHELL != "/bin/tcsh" && $SHELL != "/bin/csh" ) then
-    echo "Current shell is not /bin/tcsh or /bin/csh."
-    echo "Installation failed."
-else
-    $CC ./src/koala.cpp -o ./bin/koala
-    $CC ./src/koala_elec_entro.cpp -o ./bin/koala_elec_entro
-    $CC ./src/koala_dire2cart.cpp -o ./bin/koala_dire2cart
-endif
+# Don't change the following.
+# Unless you know what you are doing.
+mkdir -p $DIR
+$CC ./src/koala.cpp -o $DIR/koala
+$CC ./src/koala_dire2cart.cpp -o $DIR/koala_dire2cart
+$CC ./src/koala_elec_entro.cpp -o $DIR/koala_elec_entro
+cp ./src/koala_kill $DIR/koala_kill
+cp ./src/koala_monitor $DIR/koala_monitor
+cp ./src/koala_plot_dos $DIR/koala_plot_dos
+cp ./src/koala_plot_mag $DIR/koala_plot_mag
+
+echo "Installation successful. Type 'koala' to learn more."
