@@ -1,0 +1,49 @@
+#! /bin/tcsh
+
+# If E_vs_V.dat already exists, ask user.
+set OVERWRITE = y
+if ( -e E_vs_V.dat ) then
+    echo -n "E_vs_V.dat already exist. Overwrite it? (y or n):"
+    set OVERWRITE = $<
+endif
+
+# If user said OK, go on calculation.
+if ( $OVERWRITE == n ) then
+    echo "Aborting..."
+else
+    echo "# First column: unit cell volume in (a.u.)^3" > E_vs_V.dat
+    echo "# Second column: energy in Ry" >> E_vs_V.dat
+    foreach i ( * )
+        if ( -d $i ) then
+            # Calculate volume using CONTCAR
+            # Method:
+            # det(L.V.) = a1*b2*c3 - a1*b3*c2 - a2*b1*c3
+            #            +a2*b3*c1 + a3*b1*c2 - a3*b2*c1
+            # Then convert Ang^3 to (a.u.)^3. 
+            set a1 = `awk 'NR==3 {print $1}' $i/CONTCAR`
+            set a2 = `awk 'NR==3 {print $2}' $i/CONTCAR`
+            set a3 = `awk 'NR==3 {print $3}' $i/CONTCAR`
+            set b1 = `awk 'NR==4 {print $1}' $i/CONTCAR`
+            set b2 = `awk 'NR==4 {print $2}' $i/CONTCAR`
+            set b3 = `awk 'NR==4 {print $3}' $i/CONTCAR`
+            set c1 = `awk 'NR==5 {print $1}' $i/CONTCAR`
+            set c2 = `awk 'NR==5 {print $2}' $i/CONTCAR`
+            set c3 = `awk 'NR==5 {print $3}' $i/CONTCAR`
+            set a0 = `awk 'NR==2 {print $1}' $i/CONTCAR`
+            set V = `echo "scale=8;$a0^3*(($a1)*($b2)*($c3)-($a1)*($b3)*($c2)-($a2)*($b1)*($c3)+($a2)*($b3)*($c1)+($a3)*($b1)*($c2)-($a3)*($b2)*($c1))" | bc`
+            echo -n `echo "scale=8;$V*6.7483345" | bc` >> E_vs_V.dat
+            echo -n "   " >> E_vs_V.dat
+            # Extract energy from OSZICAR (in eV).
+            # Then convert eV to Ry.
+            set E = `awk 'END {print $3}' $i/OSZICAR | sed -e 's/[E]+*/\\*10\\^/'`
+            echo `echo "scale=8;$E/13.605693" | bc` >> E_vs_V.dat
+        endif
+    end
+    
+    mur_fit > mur-fit.temp << EOF
+E_vs_V.dat
+mur_fit.out
+EOF
+
+rm mur-fit.temp
+endif

@@ -1,22 +1,41 @@
 #! /bin/tcsh -f
 
-# This is where you place koala executables.
-# (I recommend not to use the koala directory in case
-# the executables get overwritten when updating koala.)
-set DIR = $HOME/bin
+# This script will install koala executables at
+# $KOALABIN, and creat soft links at $BINPATH
+# which point to the executables at $KOALABIN.
+# 
+# Please make sure $BINPATH is in your $PATH.
+#
+# Author: Changning Niu (cniu@ncsu.edu)
+# Updated at 03-29-2013.
 
-# This is your C compiler:
+
+# Where koala executables are stored:
+set KOALABIN = $HOME/Apps/koala/bin
+
+# Your default bin path:
+set BINPATH = $HOME/bin
+
+# C compiler:
 set CC = c++
 
 # Don't change the following.
 # Unless you know what you are doing.
-mkdir -p $DIR
-$CC ./src/koala.cpp -o $DIR/koala
-$CC ./src/koala_dire2cart.cpp -o $DIR/koala_dire2cart
-$CC ./src/koala_elec_entro.cpp -o $DIR/koala_elec_entro
-cp ./src/koala_kill $DIR/koala_kill
-cp ./src/koala_monitor $DIR/koala_monitor
-cp ./src/koala_plot_dos $DIR/koala_plot_dos
-cp ./src/koala_plot_mag $DIR/koala_plot_mag
+if ( `echo $PATH | grep "$BINPATH" | wc -l` == 0 ) then
+    echo "Warning: BINPATH ($BINPATH) is not in your PATH!"
+    echo "Add $BINPATH to your PATH after installation."
+endif
+mkdir $KOALABIN
+$CC src/koala.cpp -o $KOALABIN/koala
+$CC src/koala_dire2cart.cpp -o $KOALABIN/koala_dire2cart
+$CC src/koala_elec_entro.cpp -o $KOALABIN/koala_elec_entro
+cp src/koala_kill.tcsh $KOALABIN/koala_kill
+cp src/koala_monitor.tcsh $KOALABIN/koala_monitor
+cp src/koala_plot_dos.tcsh $KOALABIN/koala_plot_dos
+cp src/koala_plot_mag.tcsh $KOALABIN/koala_plot_mag
+cp src/koala_vasp_mur.tcsh $KOALABIN/koala_vasp_mur
 
-echo "Installation successful. Type 'koala' to learn more."
+cd $KOALABIN
+foreach i ( * )
+    ln -sf $KOALABIN/$i $BINPATH/$i
+end 

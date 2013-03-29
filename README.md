@@ -27,23 +27,54 @@
     - Output: mag.gif
 
 ## Installation
+This instruction will guide users to store the source code of *koala* at `$HOME/Apps/koala/koala-master`, executables of *koala* at `$HOME/Apps/koala/bin`, soft links at `$HOME/bin` which point to the executables of *koala*. If user decides to follow exactly this instruction, please make sure `$HOME/bin` is in the `PATH`, that is, add `setenv PATH $HOME/bin:$PATH` to `$HOME/.tcshrc`.
 
-### 1. Install Github
-```bash
-mkdir ~/Apps/Github
-cd ~/Apps/Github
-wget --no-check-certificate https://github.com/git/git/archive/master.zip
+If user prefers other ways, please make suitable changes when following the instruction. It is not difficult.
+
+### 1. Install *koala*
+```tcsh
+mkdir ~/Apps/koala
+cd ~/Apps/koala
+wget --no-check-certificate https://github.com/changning/koala/archive/master.zip
 unzip master
-cd git-master
-make configure
-./configure --prefix=$HOME/Apps/Github
-make all
-make install
-echo "setenv GIT_SSL_NO_VERIFY TURE" >> ~/.tcshrc
+cd koala-master
+vi Install
+./Install
 ```
 
-### koala_plot_mag
-1. Install latest ImageMagick.
+### 2. Install necessary softwares
+Some *koala* executables need newer versions of some softwares on the HPC@NCSU in order to work properly. Check the following list and decide whether you need to install additional softwares.
+
+- `koala`
+    - None
+- `koala_dire2cart`
+    - None
+- `koala_elec_entro`
+    - None
+- `koala_kill`
+    - None
+- `koala_monitor`
+    - None
+- `koala_plot_dos`
+    - Gnuplot 4.6.2
+- `koala_plot_mag`
+    - Gnuplot 4.6.2
+    - ImageMagick 6.8.4-4
+- `koala_vasp_mur`
+    - mur_fit.f by Andrei Postnikov
+
+Install Gnuplot 4.6.2:
+```tcsh
+mkdir ~/Apps/Gnuplot
+cd ~/Apps/Gnuplot
+wget --no-check-certificate http://downloads.sourceforge.net/project/gnuplot/gnuplot/4.6.2/gnuplot-4.6.2.tar.gz
+tar xzf gnuplot-4.6.2.tar.gz
+cd gnuplot-4.6.2
+./configure --prefix=$HOME/Apps/Gnuplot
+make
+make install
+ln -s $HOME/Apps/Gnuplot/bin/gnuplot $HOME/bin/gnuplot
+```
 
 ```shell
 mkdir ~/Apps/ImageMagick
