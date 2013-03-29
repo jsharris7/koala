@@ -39,10 +39,13 @@ This instruction will guide users to store the source code of *koala* at `$HOME/
 
 If user prefers other ways, please make suitable changes when following the instruction. It is not difficult.
 
-### 1. Install *koala*
+### 1. Install or update *koala*
+Copy the following to run.tcsh, then `tcsh run.tcsh`.
 ```tcsh
-mkdir ~/Apps/koala
-cd ~/Apps/koala
+#! /bin/tcsh
+mkdir -p $HOME/Apps/koala
+cd $HOME/Apps/koala
+rm -r koala-master bin master*
 wget --no-check-certificate https://github.com/changning/koala/archive/master.zip
 unzip master
 cd koala-master
