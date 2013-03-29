@@ -12,6 +12,10 @@
     - Calculate electronic entropy.
     - Input: DOSCAR
     - Output: Elec_entropy.dat
+- `koala_emto_mur`
+    - Fit Murnaghan EOS for EMTO-CPA results.
+- `koala_espr_mur`
+    - Fit Murnaghan EOS for ESPRESSO results.
 - `koala_kill`
     - Kill LSF jobs selected by user.
 - `koala_monitor`
@@ -25,6 +29,10 @@
     - Plot animation of magnetic moments.
     - Input: CONTCAR, OUTCAR
     - Output: mag.gif
+- `koala_vasp_mur`
+    - Fit Murnaghan EOS for VASP calculations.
+    - Input: CONTCAR&OSZICAR in all sub-directories
+    - Output: mur_fit.out
 
 ## Installation
 This instruction will guide users to store the source code of *koala* at `$HOME/Apps/koala/koala-master`, executables of *koala* at `$HOME/Apps/koala/bin`, soft links at `$HOME/bin` which point to the executables of *koala*. If user decides to follow exactly this instruction, please make sure `$HOME/bin` is in the `PATH`, that is, add `setenv PATH $HOME/bin:$PATH` to `$HOME/.tcshrc`.
@@ -51,6 +59,10 @@ Some *koala* executables need additional softwares in order to work properly. Ch
     - None
 - `koala_elec_entro`
     - None
+- `koala_emto_mur`
+    - mur_fit.f by Andrei Postnikov
+- `koala_espr_mur`
+    - mur_fit.f by Andrei Postnikov
 - `koala_kill`
     - None
 - `koala_monitor`
