@@ -98,3 +98,45 @@ wget http://www.home.uni-osnabrueck.de/apostnik/Software/mur_fit.f
 gfortran mur_fit.f -o mur_fit
 ln -s $HOME/Apps/mur_fit/mur_fit $HOME/bin/mur_fit
 ```
+
+## Usage
+### koala
+Synopsis: `koala`
+
+Anytime you want to use a *koala* command but forget the exact name, type `koala`. It will display all the *koala* commands.
+
+### koala_dire2cart
+Synopsis: `koala_dire2cart [FILE]`
+
+It converts the file given by user (POSCAR if not given) from *direct* to *Cartesian*. The file must follow the format of POSCAR in VASP. The Cartesian-formated file is saved as `[FILE].cart`.
+
+### koala_elec_entro
+Synopsis: `koala_elec_entro`
+
+Make sure a DOSCAR is in the present working directory. It will calculate the electronic entropy as S = -k_B * integral(n * (f*ln(f)+(1-f)*ln(1-f))dE), where f is the Fermi distribution function, n is the density of states. The electronic entropy as a function of temperature will be saved as `Elec_entropy.dat`.
+
+### koala_emto_mur
+Synopsis: `koala_emto_mur`
+
+This code works with EMTO-CPA calculations.
+
+### koala_espr_mur
+Synopsis: `koala_espr_mur`
+
+This code works with ESPRESSO (pwscf) calculations.
+
+### koala_kill
+Synopsis: `koala_kill`
+
+After typing this command, a VIM file that shows all running jobs will pop up. Edit this file and leave only jobs to kill and quit VIM. The left jobs will be automatically killed after confirmation.
+
+### koala_monitor
+Synopsis: `koala_monitor`
+
+You only need to run this command once. After typing this command, close the current terminal (otherwise it will keep popping up disturbing messages) and start a new one. It runs `bjobs -d` every hour and saves your finished jobs at `$HOME/.koala/finished.jobs`. It also saves more details about the finished jobs (`bjobs -l -d`) at `$HOME/.koala/finished.details`. Users can check whether it is running by checking whether `$HOME/.koala/running` exists. To stop the monitor, type `touch $HOME/.koala/stop` and wait for an hour. If it is stopped, `$HOME/.koala/stopped` will show up.
+
+### koala_plot_dos
+Synopsis: `koala_plot_dos`
+
+Make sure a DOSCAR is in the present working directory. Make sure Gnuplot 4.6.2 has been installed. It re-calculates energies by setting the Fermi level as zero. Then it generates TDOS.png using gnuplot. It is expected that this command cannot generate TODS.png as user wants. Try `vim \`which koala_plot_dos\`` and change the gnuplot settings.
+
