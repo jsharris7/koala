@@ -91,20 +91,7 @@ make install
 ln -s $HOME/Apps/Gnuplot/bin/gnuplot $HOME/bin/gnuplot
 ```
 
-#### 2.2 Install ImageMagick 6.8.4-4
-```tcsh
-mkdir ~/Apps/ImageMagick
-cd ~/Apps/ImageMagick
-wget --no-check-certificate http://www.imagemagick.org/download/ImageMagick-6.8.4-4.tar.gz
-tar xzf ImageMagick.tar.gz
-cd ImageMagick-6.8.4-4
-./configure --prefix=$HOME/Apps/ImageMagick
-make all
-make install
-ln -s $HOME/Apps/ImageMagick/bin/convert $HOME/bin/convert
-````
-
-#### 2.3 Install mur_fit.f
+#### 2.2 Install mur_fit.f
 ```tcsh
 mkdir ~/Apps/mur_fit
 cd ~/Apps/mur_fit
