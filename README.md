@@ -74,7 +74,6 @@ Some *koala* executables need additional softwares in order to work properly. Ch
     - Gnuplot 4.6.2
 - `koala_plot_mag`
     - Gnuplot 4.6.2
-    - ImageMagick 6.8.4-4
 - `koala_vasp_mur`
     - mur_fit.f by Andrei Postnikov
 
