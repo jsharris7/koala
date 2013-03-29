@@ -1,30 +1,27 @@
 # *koala*
 ## What is *koala*?
-*koala* is a toolkit for HPC users at NCSU. It is written in C-Shell language or C++. 
+*koala* is a toolkit for HPC users at NCSU. It is written in C-Shell language or C++. *koala* assists users in some common works so that users can take a break on a tree like a koala.
 
-Here is a quick look at what *koala* can do.
-
-- koala
-    - List all the following commands.
-- koala_dire2cart [file]
+- `koala`
+    - List all *koala* commands.
+- `koala_dire2cart [FILE]`
     - Convert "Direct" to "Cartesian".
-    - Input: POSCAR (default)
-    - Output: [file].cart
-- koala_elec_entro
+    - Input: POSCAR (default) or [FILE]
+    - Output: [FILE].cart
+- `koala_elec_entro`
     - Calculate electronic entropy.
     - Input: DOSCAR
     - Output: Elec_entropy.dat
-- koala_kill
-    - Kill LSF jobs based on user selection.
-- koala_monitor
-    - Keep an eye on finished LSF jobs.
-    - Runs on background.
+- `koala_kill`
+    - Kill LSF jobs selected by user.
+- `koala_monitor`
+    - Save all finished LSF jobs (running in background).
     - Finished jobs saved at ~/.koala
-- koala_plot_dos
-    - Plot Total DOS.
+- `koala_plot_dos`
+    - Plot Total DOS (Fermi level as zero).
     - Input: DOSCAR
     - Output: TDOS.png
-- koala_plot_mag
+- `koala_plot_mag`
     - Plot animation of magnetic moments.
     - Input: CONTCAR, OUTCAR
     - Output: mag.gif
