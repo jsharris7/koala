@@ -138,5 +138,14 @@ You only need to run this command once. After typing this command, close the cur
 ### koala_plot_dos
 Synopsis: `koala_plot_dos`
 
-Make sure a DOSCAR is in the present working directory. Make sure Gnuplot 4.6.2 has been installed. It re-calculates energies by setting the Fermi level as zero. Then it generates TDOS.png using gnuplot. It is expected that this command cannot generate TODS.png as user wants. Try `vim \`which koala_plot_dos\`` and change the gnuplot settings.
+Make sure a DOSCAR is in the present working directory. Make sure Gnuplot 4.6.2 has been installed. It re-calculates energies by setting the Fermi level as zero. Then it generates TDOS.png using gnuplot. It is expected that this command cannot generate TODS.png as user wants. Try ``vim `which koala_plot_dos` `` and change the gnuplot settings.
 
+### koala_plot_mag
+Synopsis: `koala_plot_mag`
+
+Make sure a CONTCAR and an OUTCAR is in the present working directory. Make sure Gnuplot 4.6.2 has been installed. It draws arrows that represent magnetic moments in both direction and magnitude on each atom. It plots 36 static images with viewing angle shifted by 10 degree using gnuplot. Then it uses ImageMagick (already installed on HPC) to convert these images to an animation gif named `mag.gif`. Try ``vim `which koala_plot_mag` `` and change the gnuplot settings for you needs.
+
+### koala_vasp_mur
+Synopsis: `koala_vasp_mur`
+
+This command is only useful in such situation: each sub-directory is an individual VASP calculation with a changing volume. It finds volume and energy from CONTCAR and OSZICAR from all sub-directories, and fits these data to the Murnaghan EOS. The fitting results will be saved as `mur_fit.out`. The fitting is done by mur_fit.f which is written by Andrei Postnikov.
