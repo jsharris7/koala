@@ -1,3 +1,5 @@
+// koala_elec_entro.cpp
+//
 // This code calculates electronic entropy from DOSCAR.
 // This function is:
 // S = - k_B * int(n * (f*ln(f) + (1 - f) * ln(1 - f))dE)
@@ -6,7 +8,8 @@
 //      f = 1 / (exp((E - E_f) / k_B * T) + 1)
 //  n is the density of states.
 //
-// Changning Niu, March 15, 2013.
+// Author: Changning Niu (cniu@ncsu.edu)
+// Updated: 03-15-2013
 
 #include <iostream>
 #include <fstream>

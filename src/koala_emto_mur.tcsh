@@ -1,4 +1,11 @@
 #! /bin/tcsh
+# 
+# koala_emto_mur.tcsh
+#
+# This code fit murnaghan EOS for EMTO-CPA results.
+#
+# Author: Changning Niu (cniu@ncsu.edu)
+# Updated: 03-29-2013
 
 if ( -e data-mur ) then
     rm data-mur
@@ -13,9 +20,9 @@ foreach i ( `ls` )
     endif
 end
 
-mur-fit << EOF
+mur_fit << EOF
 data-mur
-mur-fit.output
+mur_fit.out
 EOF
 
 rm data-mur

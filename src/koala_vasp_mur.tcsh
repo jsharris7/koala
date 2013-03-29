@@ -1,4 +1,13 @@
 #! /bin/tcsh
+# 
+# koala_vasp_mur.tcsh
+#
+# This code fits murnaghan EOS for VASP results.
+# It requires VASP calculations in all sub-directories 
+# of present direcotry.
+#
+# Author: Changning Niu (cniu@ncsu.edu)
+# Updated: 03-29-2013
 
 # If E_vs_V.dat already exists, ask user.
 set OVERWRITE = y

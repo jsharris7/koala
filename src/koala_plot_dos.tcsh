@@ -1,4 +1,14 @@
 #! /bin/tcsh                                                                                                                                    
+#
+# koala_plot_dos.tcsh
+#
+# This code reads DOSCAR, and re-calculate
+# energies by minusing the Fermi level.
+# Finally it uses gnuplot to save an image
+# of TDOS.
+#
+# Author: Changning Niu (cniu@ncsu.edu)
+# Updated: 03-29-2013
 
 ### User define:
 

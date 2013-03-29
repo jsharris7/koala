@@ -1,4 +1,13 @@
 #! /bin/tcsh
+# 
+# koala_monitor.tcsh
+#
+# This code first check if it is running.
+# If not, it runs in background, and save
+# all finished LSF jobs in a local file.
+#
+# Author: Changning Niu (cniu@ncsu.edu)
+# Updated: 03-29-2013
 
 if ( ! -d ~/.koala ) then
     mkdir ~/.koala

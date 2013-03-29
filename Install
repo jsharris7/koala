@@ -29,6 +29,8 @@ mkdir $KOALABIN
 $CC src/koala.cpp -o $KOALABIN/koala
 $CC src/koala_dire2cart.cpp -o $KOALABIN/koala_dire2cart
 $CC src/koala_elec_entro.cpp -o $KOALABIN/koala_elec_entro
+cp src/koala_emto_mur.tcsh $KOALABIN/koala_emto_mur
+cp src/koala_espr_mur.tcsh $KOALABIN/koala_espr_mur
 cp src/koala_kill.tcsh $KOALABIN/koala_kill
 cp src/koala_monitor.tcsh $KOALABIN/koala_monitor
 cp src/koala_plot_dos.tcsh $KOALABIN/koala_plot_dos

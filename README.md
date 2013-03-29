@@ -43,7 +43,7 @@ vi Install
 ```
 
 ### 2. Install necessary softwares
-Some *koala* executables need newer versions of some softwares on the HPC@NCSU in order to work properly. Check the following list and decide whether you need to install additional softwares.
+Some *koala* executables need additional softwares in order to work properly. Check whether you need to install additional softwares.
 
 - `koala`
     - None
@@ -63,7 +63,7 @@ Some *koala* executables need newer versions of some softwares on the HPC@NCSU i
 - `koala_vasp_mur`
     - mur_fit.f by Andrei Postnikov
 
-Install Gnuplot 4.6.2:
+#### 2.1 Install Gnuplot 4.6.2:
 ```tcsh
 mkdir ~/Apps/Gnuplot
 cd ~/Apps/Gnuplot
@@ -76,26 +76,24 @@ make install
 ln -s $HOME/Apps/Gnuplot/bin/gnuplot $HOME/bin/gnuplot
 ```
 
-```shell
+#### 2.2 Install ImageMagick 6.8.4-4
+```tcsh
 mkdir ~/Apps/ImageMagick
 cd ~/Apps/ImageMagick
-wget http://www.imagemagick.org/download/ImageMagick.tar.gz
+wget --no-check-certificate http://www.imagemagick.org/download/ImageMagick-6.8.4-4.tar.gz
 tar xzf ImageMagick.tar.gz
-cd ImageMagick*
-./configure --prefix=~/Apps/ImageMagick
-make
+cd ImageMagick-6.8.4-4
+./configure --prefix=$HOME/Apps/ImageMagick
+make all
 make install
+ln -s $HOME/Apps/ImageMagick/bin/convert $HOME/bin/convert
 ````
 
-2. Install latest Gnuplot
-
-```shell
-mkdir ~/Apps/Gnuplot
-cd ~/Apps/Gnuplot
-wget http://downloads.sourceforge.net/project/gnuplot/gnuplot/4.6.2/gnuplot-4.6.2.tar.gz
-tar xzf gnuplot-4.6.2.tar.gz
-cd gnuplot-4.6.2
-./configure --prefix=~/Apps/Gnuplot
-make
-make install
+#### 2.3 Install mur_fit.f
+```tcsh
+mkdir ~/Apps/mur_fit
+cd ~/Apps/mur_fit
+wget http://www.home.uni-osnabrueck.de/apostnik/Software/mur_fit.f
+gfortran mur_fit.f -o mur_fit
+ln -s $HOME/Apps/mur_fit/mur_fit $HOME/bin/mur_fit
 ```

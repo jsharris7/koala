@@ -1,4 +1,13 @@
 #! /bin/tcsh                                                                            
+# 
+# koala_kill.tcsh
+#
+# This code lists all running LSF jobs.
+# Then let user select what to kill.
+# Then kill the selected jobs.
+#
+# Author: Changning Niu (cniu@ncsu.edu)
+# Updated: 03-29-2013
 
 if ( ! -d ~/.koala ) then
     mkdir ~/.koala

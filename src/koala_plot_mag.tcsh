@@ -1,4 +1,14 @@
 #! /bin/tcsh
+# 
+# koala_plot_mag.tcsh
+#
+# This code reads atomic coordinates from CONTCAR,
+# magnetic moments from OUTCAR. Then it plots static 
+# images using gnuplot viewed from different angles,
+# and convert to animation gif using ImageMagick.
+#
+# Author: Changning Niu (cniu@ncsu.edu)
+# Updated: 03-29-2013
 
 # User input:
 # Scaler for magnetic moments
