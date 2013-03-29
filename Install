@@ -25,7 +25,8 @@ if ( `echo $PATH | grep "$BINPATH" | wc -l` == 0 ) then
     echo "Warning: BINPATH ($BINPATH) is not in your PATH!"
     echo "Add $BINPATH to your PATH after installation."
 endif
-mkdir $KOALABIN
+mkdir -p $KOALABIN
+mkdir -p $BINPATH
 $CC src/koala.cpp -o $KOALABIN/koala
 $CC src/koala_dire2cart.cpp -o $KOALABIN/koala_dire2cart
 $CC src/koala_elec_entro.cpp -o $KOALABIN/koala_elec_entro
