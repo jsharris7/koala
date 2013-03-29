@@ -37,7 +37,7 @@
 ## Installation
 This instruction will guide users to store the source code of *koala* at `$HOME/Apps/koala/koala-master`, executables of *koala* at `$HOME/Apps/koala/bin`, soft links at `$HOME/bin` which point to the executables of *koala*. If user decides to follow exactly this instruction, please make sure `$HOME/bin` is in the `PATH`, that is, add `setenv PATH $HOME/bin:$PATH` to `$HOME/.tcshrc`.
 
-If user prefers other ways, please make suitable changes when following the instruction. It is not difficult.
+If users prefer other ways, they should make suitable changes when following the instruction. It is not difficult.
 
 ### 1. Install or update *koala*
 Copy the following to run.tcsh, then `tcsh run.tcsh`.
